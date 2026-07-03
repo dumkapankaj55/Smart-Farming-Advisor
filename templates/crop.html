@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <div class="card shadow-sm border-0 rounded-4">
+      <div class="card-body p-4">
+        <h2 class="text-success mb-3">Crop Recommendation</h2>
+        <form method="post">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Region</label>
+              <input class="form-control" name="region" placeholder="Example: Karnataka">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Soil Type</label>
+              <input class="form-control" name="soil" placeholder="Example: Loamy">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Rainfall</label>
+              <input class="form-control" name="rainfall" placeholder="Example: 800 mm">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Budget</label>
+              <input class="form-control" name="budget" placeholder="Example: Moderate">
+            </div>
+          </div>
+          <button class="btn btn-success mt-3">Recommend Crops</button>
+        </form>
+        {% if result %}
+          <div class="alert alert-success mt-4">{{ result }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

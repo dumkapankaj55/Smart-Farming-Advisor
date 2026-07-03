@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <div class="card shadow-sm border-0 rounded-4">
+      <div class="card-body p-4">
+        <h2 class="text-success mb-3">Farmer Chat Assistant</h2>
+        <p class="text-muted">Ask anything about crops, soil, pests, weather, schemes, or market prices.</p>
+        <form method="post">
+          <div class="mb-3">
+            <textarea class="form-control" name="question" rows="4" placeholder="Example: Recommend crops for my region and suggest fertilizer timing"></textarea>
+          </div>
+          <button class="btn btn-success">Ask Advisor</button>
+        </form>
+        {% if response %}
+          <div class="alert alert-success mt-4">
+            <h5 class="mb-2">Advisor Response</h5>
+            <p class="mb-0">{{ response }}</p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

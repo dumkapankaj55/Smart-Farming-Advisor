@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <div class="card shadow-sm border-0 rounded-4">
+      <div class="card-body p-4">
+        <h2 class="text-success mb-3">Farmer Profile</h2>
+        <div class="mb-3">
+          <label class="form-label">Farmer Name</label>
+          <input class="form-control" value="Ravi Kumar">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Farm Size</label>
+          <input class="form-control" value="6 acres">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Primary Crops</label>
+          <input class="form-control" value="Wheat, Maize">
+        </div>
+        <button class="btn btn-success">Save Profile</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

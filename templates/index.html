@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row align-items-center g-4">
+  <div class="col-lg-7">
+    <h1 class="display-5 fw-bold text-success">AI-powered guidance for modern farming</h1>
+    <p class="lead">Get crop advice, soil health insight, weather planning help, and government support guidance from one smart assistant.</p>
+    <a class="btn btn-success btn-lg me-2" href="{{ url_for('chat') }}">Start Chat</a>
+    <a class="btn btn-outline-success btn-lg" href="{{ url_for('crop_recommendation') }}">Check Crops</a>
+  </div>
+  <div class="col-lg-5">
+    <div class="card shadow-sm border-0 rounded-4">
+      <div class="card-body p-4">
+        <h5 class="card-title text-success">What you can do</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Crop Recommendation</li>
+          <li class="list-group-item">Soil Health Analysis</li>
+          <li class="list-group-item">Fertilizer & Pest Guidance</li>
+          <li class="list-group-item">Weather-based Farmer Advice</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

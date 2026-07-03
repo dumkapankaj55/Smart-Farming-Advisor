@@ -1,0 +1,22 @@
+body {
+  background: linear-gradient(135deg, #f5fff5 0%, #eef8ee 100%);
+  min-height: 100vh;
+}
+
+.navbar-brand {
+  letter-spacing: 0.5px;
+}
+
+.card {
+  background: rgba(255,255,255,0.95);
+}
+
+.btn-success {
+  background-color: #2e8b57;
+  border-color: #2e8b57;
+}
+
+.btn-success:hover {
+  background-color: #257a49;
+  border-color: #257a49;
+}
