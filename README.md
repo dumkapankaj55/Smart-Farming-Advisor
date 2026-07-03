@@ -121,12 +121,11 @@ python app.py
 ## 🔑 Environment Variables
 
 ```
-IBM_API_KEY=
-IBM_PROJECT_ID=
-IBM_WATSONX_URL=
-IBM_MODEL_ID=
-SECRET_KEY=
-```
+IBM_API_KEY=TCYyX5dYJl56uC-BTeIQzTPvvIPzfqUTnPdnXQoy-MsT
+IBM_PROJECT_ID=YOUR_PROJECT_ID
+IBM_WATSONX_URL=https://us-south.ml.cloud.ibm.com
+IBM_MODEL_ID=ibm/granite-3-3-8b-instruct
+SECRET_KEY=YOUR_SECRET_KEY
 
 ---
 
